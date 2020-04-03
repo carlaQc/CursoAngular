@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'cursos',
-    template: `
+    template: 
+    `
     <h1>Aprendiendo a como crear componentes</h1>
-    <p>video 6</p>
+    <p>VIDEO - 6</p>
     `,
-    styles: ['h1 {color: red;}']
+    styles: ['    h1 {color: orange; },'    ]
 
 })
 export class CursosComponent{

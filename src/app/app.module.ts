@@ -7,6 +7,7 @@ import { CursosComponent } from './cursos.component';
 import { Cursos2Component } from './cursos2/cursos2.component';
 import { PropertyBinding } from './PropertyBinding-9.component';
 import { ClassBinding } from './ClassBinding.component';
+import { StyleBinding } from './StyleBinding.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ClassBinding } from './ClassBinding.component';
     CursosComponent,
     Cursos2Component,
     PropertyBinding,
-    ClassBinding
+    ClassBinding,
+    StyleBinding
 
   ],
   imports: [
