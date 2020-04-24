@@ -1,8 +1,8 @@
 <h1>HOLA </h1>
-<h2>
-  {{mensaje}} <!--estamos utilizando  el concepto de INTERPOLACION-->           
+<!--<h2>
+  {{mensaje}}  //estamos utilizando  el concepto de INTERPOLACION         
 </h2>
-
+-->
 <hr/>
 
 <cursos></cursos>
@@ -15,8 +15,9 @@
 
 <h1>ANGULAR VIDEO - 8</h1>
 <p> STRING INTERPOLATION</p>
-<h2>{{nombre}}</h2> <!--aqui algular se va encargar de analizar a lo que se encuentre dentro de las llaves dobles-->
-<h2>{{ 'Mi nombre es: ' + getNombre() }}</h2> <!--interpolacion - funcion-->
+<!--<h2>{{nombre}}</h2> //aqui algular se va encargar de analizar a lo que se encuentre dentro de las llaves dobles
+<h2>{{ 'Mi nombre es: ' + getNombre() }}</h2> //interpolacion - funcion
+-->
 
 <hr/>
 
@@ -29,3 +30,91 @@
 <hr/>
 
 <StyleBinding></StyleBinding>
+
+<hr/>
+<EventBinding></EventBinding>
+
+<hr/>
+
+<EventFiltering></EventFiltering>
+<hr/>
+
+<TemplateVariable></TemplateVariable>
+
+<hr/>
+
+<h1>TWO WAY BINDING</h1>
+    <p>VIDEO - 15</p>
+
+    <!--<input type="text" value="{{ persona.nombre }}">  // o puede ser de la siguiente forma: (abajo) 
+    <input type="text" [value] ="persona.nombre">  //como podemos ver nos muestra el nombre en el imput pero cuando modificamos  no se modifica el nombre de abajo solo el de la cajita, entonces ahi utilizamos el twoWay de la siguiente manera
+    
+    //utilizando el concepto TWO WAy
+
+    <input type="text" [(ngModel)] ="persona.nombre">
+    <P>{{persona.nombre}}</P>-->
+
+<hr/>
+
+<h1>SERVICIOS HTTP</h1>
+    <p>VIDEO - 16</p>
+  <!--<ul>
+    <li *ngFor="let persona of personas">
+    {{ persona.nombre}}
+    </li>
+    </ul>-->
+    
+    <hr/>
+
+<h1>Dependency Injection</h1>
+    <p>VIDEO - 17</p>
+  <!--<ul>
+    <li *ngFor="let persona of personas">
+    {{ persona.nombre}}
+    </li>
+    </ul>
+  -->
+
+<hr/>
+<h1> Reactive Forms - Formularios</h1>
+    <p>VIDEO - 18</p>
+<div class="container">
+  <form [formGroup] = "miFormulario">
+USUARIO: <input 
+[class.is-invalid]="miFormulario.get('username').touched && miFormulario.get('username').invalid"
+type="text" 
+class="form-control" 
+formControlName="username"><br><br>
+
+
+PASSWORD: <input 
+
+[class.is-invalid]="miFormulario.get('userpassword').touched && miFormulario.get('userpassword').invalid"
+
+type="password" 
+class="form-control" 
+formControlName="userpassword"><br/><br>
+
+    <button class="boton" type="submit">Enviar</button>
+  
+</form><br>
+{{ miFormulario.value | json }}
+</div>
+
+
+<hr/>
+<h1> ng-content - Content Projection</h1>
+<h1>Slot Content Projection - SELECT</h1>
+    <p>VIDEOS 19 -20 </p>
+
+    <div class="container">
+
+      <app-mensaje> 
+        <h2>HOLA MUNDO</h2>
+        <button class="boton" >Hazme Click</button>
+        <div>Este es un DIV</div>
+        <p>Mensaje desde el component App</p>
+
+      </app-mensaje>
+
+    </div>
